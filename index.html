@@ -3,35 +3,111 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Página personal de Pedro Sempere Valdés</title>
+  <title>Pedro Sempere Valdés | Docente de Matemáticas</title>
+  
+  <!-- Fuentes: Montserrat y Open Sans -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <!-- FontAwesome para iconos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <link rel="stylesheet" href="style.css" />
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
 </head>
 <body>
-  <header>
-    <div class="container header-content">
-      <img src="https://media.licdn.com/dms/image/v2/C5603AQGHv4e49y29Gw/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1516971757633?e=2147483647&v=beta&t=WzZFoCZv-5_mvmGHpgO-DpJAINrOQC-ufXQ4gKwgw_E" alt="Pedro Sempere Valdés" class="profile-pic" />
-      <div class="intro-text">
-        <h1>Página personal de Pedro Sempere Valdés</h1>
-        <h2>Docente de matemáticas en educación secundaria y bachillerato</h2>
-        <p class="bio">
-          Soy docente de matemáticas en educación secundaria y bachillerato. Apasionado por acercar las matemáticas a los estudiantes de forma clara, práctica y motivadora. Comprometido con una enseñanza basada en la comprensión y el pensamiento crítico.
-        </p>
-        <p class="contact-email">
-          📧 <a href="mailto:pedrosemperevaldes@gmail.com">pedrosemperevaldes@gmail.com</a>
-        </p>
+
+  <!-- Navegación -->
+  <nav>
+    <div class="container nav-content">
+      <div class="logo">PS<span>.</span></div>
+      <ul>
+        <li><a href="#sobre-mi">Sobre mí</a></li>
+        <li><a href="#metodologia">Metodología</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="mailto:pedrosemperevaldes@gmail.com" class="btn-cta">Contacto</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="container hero-content">
+      <div class="hero-image">
+        <img src="https://media.licdn.com/dms/image/v2/C5603AQGHv4e49y29Gw/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1516971757633?e=2147483647&v=beta&t=WzZFoCZv-5_mvmGHpgO-DpJAINrOQC-ufXQ4gKwgw_E" alt="Pedro Sempere Valdés">
+      </div>
+      <div class="hero-text">
+        <h1>Pedro Sempere Valdés</h1>
+        <p class="subtitle">Docente de Matemáticas en Secundaria y Bachillerato</p>
+        <p class="tagline">Transformando números en pensamiento crítico y soluciones reales.</p>
         <div class="social-links">
-          <a href="https://github.com/pedrosempere" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-          <a href="https://www.linkedin.com/in/pedrosempere" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-          <a href="https://twitter.com/MATESAL100X100" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.linkedin.com/in/pedrosempere" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="https://twitter.com/MATESAL100X100" target="_blank" title="Twitter"><i class="fab fa-x-twitter"></i></a>
+          <a href="https://github.com/pedrosempere" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
         </div>
       </div>
     </div>
   </header>
 
   <main>
+    <!-- Sobre mí -->
+    <section id="sobre-mi" class="container section">
+      <h2 class="section-title">Sobre mí</h2>
+      <p class="bio-text">
+        Apasionado por acercar las matemáticas a los estudiantes de forma clara, práctica y motivadora. 
+        Mi objetivo no es solo enseñar fórmulas, sino fomentar una comprensión profunda que permita a los 
+        alumnos enfrentarse a desafíos lógicos con confianza.
+      </p>
+    </section>
+
+    <!-- Metodología -->
+    <section id="metodologia" class="bg-light">
+      <div class="container section">
+        <h2 class="section-title">Mi Metodología</h2>
+        <div class="grid-three">
+          <div class="card-mini">
+            <i class="fas fa-brain"></i>
+            <h3>Pensamiento Crítico</h3>
+            <p>Fomento el razonamiento lógico antes que la memorización mecánica de procedimientos.</p>
+          </div>
+          <div class="card-mini">
+            <i class="fas fa-laptop-code"></i>
+            <h3>Herramientas Digitales</h3>
+            <p>Integración de GeoGebra, GitHub y software educativo para visualizar conceptos abstractos.</p>
+          </div>
+          <div class="card-mini">
+            <i class="fas fa-bullseye"></i>
+            <h3>Matemática Real</h3>
+            <p>Conexión de los temas curriculares con aplicaciones del mundo real y cotidiano.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Proyectos -->
     <section id="proyectos" class="container section">
-      <h2>Proyectos destacados</h2>
+      <h2 class="section-title">Proyectos Destacados</h2>
       <div class="projects-grid">
-        <!-- Aquí puedes añadir proyectos, ejemplo: -->
-        <article class="
+        <article class="project-card">
+          <div class="project-info">
+            <h3>Matesal100x100</h3>
+            <p>Divulgación y recursos matemáticos orientados a mejorar el rendimiento académico y la motivación en secundaria.</p>
+            <div class="tags"><span>Educación</span><span>Divulgación</span></div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-info">
+            <h3>Web Personal (GitHub Pages)</h3>
+            <p>Desarrollo de este espacio personal utilizando tecnologías web modernas para centralizar mi portafolio docente.</p>
+            <div class="tags"><span>HTML/CSS</span><span>Git</span></div>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 Pedro Sempere Valdés. Hecho con <i class="fas fa-heart" style="color: #e74c3c;"></i> y código.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
